@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="http://fonts.cdnfonts.com/css/komika-title" rel="stylesheet">
+        <link href="http://fonts.cdnfonts.com/css/contra" rel="stylesheet">
+        <link href="index.css" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <header>  
+            <h1 id="title">Social Media Habits Survey</h1>
+            <p id="description"><em>The following survey will not be used for anything</em></p>
+        </header>
+        <div id="survey-div">
+            <form id="survey-form" action="">
+            <label id="name-label" for="name">Full Name</label><br>
+            <input type="text" id="name" name="name" placeholder="John Doe" required  class="input-spacing"><br>
+            <label id="email-label" for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required class="input-spacing"><br>
+            <label id="number-label" for="number">ID Number</label><br>
+            <input type="number" id="number" name="number" min=0 max=9999 minlength="4" maxlength="4" placeholder="0000" class="input-spacing"><br>
+            <label for="dropdown">How long have you used social media for?</label><br>
+            <select id="dropdown" name="dropbox" required>
+                <option disabled selected value style="display:none"> select time</option>
+                <option value="less-than-year">less than a year</option>
+                <option value="1-2-years">1-2 years</option>
+                <option value="2-3-years">2-3 years</option>
+                <option value="3+years">3+ years</option>
+            </select><br><br>
+            <label for="radio">How would you rate social media's impact on your life?</label><br>
+            <input type="radio" name="radio" value="very-poor">very light</input><br>
+            <input type="radio" name="radio" value="poor">light</input><br>
+            <input type="radio" name="radio" value="average">medium</input><br>
+            <input type="radio" name="radio" value="good">heavy</input><br>
+        <input type="radio" name="radio" value="excellent">very heavy</input><br><br>
+            <label for="check">Which categories do you follow?</label><br>
+            <input type="checkbox" name="check" value="travel">travel</input><br>
+            <input type="checkbox" name="check" value="entertainment">entertainment</input><br>
+            <input type="checkbox" name="check" value="food">food</input><br>
+            <input type="checkbox" name="check" value="business">business </input><br>
+            <input type="checkbox" name="check" value="sci/tech">sci/tech</input><br>
+            <input type="checkbox" name="check" value="art">art</input><br>
+            <input type="checkbox" name="check" value="celeberties">celebrities </input><br><br>
+        <label for ="add-comment">additional comments:</label><br>  
+            <textarea name="add-comment" rows="3" cols="90" class="input-spacing" placeholder="enter suggestions for improving the survey experience..."></textarea><br>
+            <input type="submit" id="submit" value="Submit" class="button">
+            </form>
+        </div>
+    </body>
+</html>
